@@ -1,4 +1,5 @@
-== JSLogger Client On Rails
+JSLogger Client On Rails
+========================
 
 This is an example app for accessing the [JSLogger API][] with Ruby On Rails.
 
