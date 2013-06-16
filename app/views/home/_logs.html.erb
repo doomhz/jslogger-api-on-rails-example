@@ -1,0 +1,32 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Count</th>
+      <th>Browsers</th>
+      <th>OSes</th>
+      <th>First hit</th>
+      <th>Last hit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% logs.each do |log| %>
+      <tr>
+        <td>
+          Line: <%= log["line"] %>
+          <br>
+          File: <%= log["hits"] %>
+          <br>
+          Message: <%= log["msg"] %>
+          <br>
+          <%= link_to "View details", "/log/#{log['id']}" %>
+        </td>
+        <td><%= log["hits"] %></td>
+        <td><%= log["browsers"] %></td>
+        <td><%= log["oses"] %></td>
+        <td><%= log["created"] %></td>
+        <td><%= log["updated"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

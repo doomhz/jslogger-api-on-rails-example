@@ -1,0 +1,32 @@
+<h2>Log details for <%= @log["id"] %></h2>
+
+<p>
+  Line: <%= @log["line"] %>
+</p>
+<p>
+  File: <%= @log["url"] %>
+</p>
+<p>
+  Message: <%= @log["msg"] %>
+</p>
+<p>
+  Full log: <%= @log["data"] %>
+</p>
+<p>
+  Hits: <%= @log["hits"] %>
+</p>
+<p>
+  Referers: <%= @log["referers"] %>
+</p>
+<p>
+  Browsers: <%= @log["browsers"] %>
+</p>
+<p>
+  OSes: <%= @log["oses"] %>
+</p>
+<p>
+  First hit: <%= @log["created"] %>
+</p>
+<p>
+  Last hit: <%= @log["updated"] %>
+</p>

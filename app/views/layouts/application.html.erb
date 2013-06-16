@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSLogger Client On Rails</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="/">JSLogger Client On Rails</a>
+      <ul class="nav">
+        <li><%= link_to "Stats", "/" %></li>
+        <li><%= link_to "Errors", :errors %></li>
+        <li><%= link_to "Events", :events %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>
