@@ -22,8 +22,6 @@ class HomeController < ApplicationController
   private
 
   def get_jslogger
-    jslogger = Jslogger::Client.new
-    request.session[:jslogger_cookies] = jslogger.login request.session[:jslogger_cookies]
-    jslogger
+    Jslogger::Client.new
   end
 end
